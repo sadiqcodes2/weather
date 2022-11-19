@@ -1,4 +1,3 @@
-const { response } = require('express')
 const req = require('request')
 
 const geoloc=(address,cb)=>{
