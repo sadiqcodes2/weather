@@ -10,7 +10,7 @@ const forecast=(latitude,longitude,location,cb)=>{
             callback('Unable to find location', undefined)
         }
         else{
-            cb(undefined, body.current.weather_descriptions + ' It is currently ' + body.current.temperature + ' degress out. There is a ' + body.current.precip + '% chance of rain.',`<img src=${body.current.weather_icons[0]}>`)
+            cb(undefined, {data:body.current.weather_descriptions + ', It is currently ' + body.current.temperature + ' degress out. There is a ' + body.current.precip + '% chance of rain.',img:body.current.weather_icons[0]})
         }
     })
 

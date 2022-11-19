@@ -62,3 +62,21 @@ button{
     padding: 8px;
     cursor: pointer;
 }
+
+#mTwo{
+    margin: 6px;
+}
+
+#u11{
+    display: flex;
+}
+
+#u11_img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+
+img[src=""] {
+    display: none;
+}

@@ -55,12 +55,14 @@ app.get('/weather',(req,res)=>{
         if (error) {
             return res.send({ error })
         }
-        forecast(latitude,longitude,location,(error, data)=>{
+        forecast(latitude,longitude,location,(error, {data,img})=>{
+            console.log(data,img)
             if (error) {
                 return res.send({ error })
             }
             else res.send({
                 forecast: data,
+                img:img,
                 location: location
             })
         })
