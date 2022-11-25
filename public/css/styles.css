@@ -53,6 +53,8 @@ header a{
 input{
     border: 1px solid #cccccc;
     padding: 8px;
+    width: 198px;
+    border-radius: 12px 2px 2px 12px;
 }
 
 button{
@@ -60,11 +62,43 @@ button{
     color: #eeeeee;
     background-color: #8888;
     padding: 8px;
+    border-radius: 2px 12px 12px 2px;
     cursor: pointer;
+}
+
+.wBox{
+    margin-top: 16px;
+    min-width: auto;
+    background-color: #0000004b;
+    border-radius: 20px;
+    width:40%;
+    margin-right: 0px;
+    padding:16px;
+}
+
+.wBox2{
+    margin-top: 16px;
+    min-width: auto;
+    border-radius: 20px;
+    width:40%;
+    margin-right: 0px;
+    padding:16px;
+    color: #00000082;
+}
+
+#mOne{
+    margin-top: 0;
+    color: #ffffff;
 }
 
 #mTwo{
     margin: 6px;
+    color: #ffffff;
+}
+
+#mThree{
+    margin: 6px;
+    color: #ffffff;
 }
 
 #u11{

@@ -11,15 +11,25 @@
 <body>
     <div class="main-content">
         {{>header}}
-
         <form action="">
             <input placeholder="Location" type="text">
             <button type="submit">SEARCH</button>
-
-            <p id="mOne"></p>
-            <div id="u11" data-label="image1">
-                <img id="u11_img" class="img" src="" alt=" ">
+            
+            <div class="wBox" style="display:none">
+                <h1 id="mOne"></h1>
                 <p id="mTwo"></p>
+                <div id="u11" data-label="image1">
+                    <img id="u11_img" class="img" src="" alt=" ">
+                    <p id="mThree"></p>
+                </div>
+            </div>
+
+            <div class="wBox2" style="display:none">
+                <ul>
+                    <li><p id="mFour"></p></li>
+                    <li><p id="mFive"></p></li>
+                    <li><p id="mSix"></p></li>
+                </ul>
             </div>
         </form>
     </div>

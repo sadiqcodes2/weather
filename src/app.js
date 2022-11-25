@@ -55,23 +55,18 @@ app.get('/weather',(req,res)=>{
         if (error) {
             return res.send({ error })
         }
-        forecast(latitude,longitude,location,(error, {data,img})=>{
-            console.log(data,img)
+        forecast(latitude,longitude,location,(error, data)=>{
+            console.log(data)
             if (error) {
                 return res.send({ error })
             }
             else res.send({
                 forecast: data,
-                img:img,
                 location: location
             })
         })
     })
 
-    // res.send({
-    //     name:'Mohammad Umair',
-    //     location:req.query.address
-    // })
 })
 
 
