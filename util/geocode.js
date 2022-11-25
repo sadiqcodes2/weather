@@ -1,7 +1,7 @@
 const req = require('request')
 
 const geoloc=(address,cb)=>{
-    const url ="https://api.mapbox.com/geocoding/v5/mapbox.places/"+address+".json?worldview=cn&access_token=pk.eyJ1IjoidTE3MTMiLCJhIjoiY2w4aGFiaThlMGtxajN3bno4MHNiN3R6eCJ9.83QPvcfEfSyfmlRpjtqvsw"
+    const url ="https://api.mapbox.com/geocoding/v5/mapbox.places/"+address+".json?worldview=cn&access_token=pk.eyJ1Ijoic2FkaXFjb2RlcyIsImEiOiJjbGF3cHJveGMwaTNsM3BuOHFoZ2w3YXAzIn0.oY7H0T5B-3Spibo17hPU0Q"
     req({url:url,json:true},(error,{body}) => {
         if( error ) cb('Unable to connect to location service', undefined)
         else if( body.features.length == 0 ) cb('Unable to find location. Try another search', undefined)
