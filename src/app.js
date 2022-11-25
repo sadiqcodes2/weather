@@ -28,21 +28,21 @@ app.use(express.static(publicPath))
 app.get('',(req,res)=>{
     res.render('index',{
         title:'Weather',
-        name:'SADIQ MAHTAR'
+        name:'SADIQ IQBAL'
     })
 })
 
 app.get('/help',(req,res)=>{
     res.render('help',{
         title:'HELP',
-        name:'SADIQ MAHTAR'
+        name:'SADIQ IQBAL'
     })
 })
 
 app.get('/about',(req,res)=>{
     res.render('about',{
         title:'ABOUT',
-        name:'SADIQ MAHTAR'
+        name:'SADIQ IQBAL'
     })
 })
 
