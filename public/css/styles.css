@@ -53,7 +53,7 @@ header a{
 input{
     border: 1px solid #cccccc;
     padding: 8px;
-    width: 198px;
+    width: 227px;
     border-radius: 12px 2px 2px 12px;
 }
 
@@ -66,23 +66,46 @@ button{
     cursor: pointer;
 }
 
+
+@media only screen and (max-width: 354px) {
+    input{
+        border: 1px solid #cccccc;
+        width: 100%;
+        border-radius: 4px;
+        padding: 8px;
+    }
+    button{
+        border: 1px solid #cccccc;
+        color: #eeeeee;
+        background-color: #8888;
+        padding: 8px;
+        width: 100%;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+}
+
 .wBox{
     margin-top: 16px;
     min-width: auto;
     background-color: #0000004b;
     border-radius: 20px;
-    width:40%;
+    width:292px;
     margin-right: 0px;
     padding:16px;
+    color: #ffffff;
 }
+
+
 
 .wBox2{
     margin-top: 16px;
     min-width: auto;
     border-radius: 20px;
-    width:40%;
     margin-right: 0px;
     padding:16px;
+    padding-left: 0px;
     color: #00000082;
 }
 
@@ -91,15 +114,10 @@ button{
     color: #ffffff;
 }
 
-#mTwo{
+#mTwo,#mThree{
     margin: 6px;
-    color: #ffffff;
 }
 
-#mThree{
-    margin: 6px;
-    color: #ffffff;
-}
 
 #u11{
     display: flex;
