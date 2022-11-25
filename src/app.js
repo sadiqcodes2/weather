@@ -80,7 +80,7 @@ app.get('/help/*',(req,res)=>{
     res.render('error',{
         title:'404',
         error:'Help article Not Found',
-        name:'MOHAMMAD UMAIR'
+        name:'SADIQ IQBAL'
     })
 })
 
@@ -88,7 +88,7 @@ app.get('*',(req,res)=>{
     res.render('error',{
         title:'404',
         error:'Page Not Found',
-        name:'MOHAMMAD UMAIR'
+        name:'SADIQ IQBAL'
     })
 })
 
